@@ -1,0 +1,45 @@
+@import "../../styles/main.scss";
+
+.header {
+  &__nav {
+    background-color: $primary-clr;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+}
+
+.header__nav-logo {
+  color: $secondary-clr;
+  justify-self: flex-start;
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  span {
+    color: $tertiary-clr;
+  }
+}
+
+.header__menu {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 0.5rem;
+  list-style: none;
+  width: 70%;
+  font-size: 1rem;
+  justify-content: end;
+  margin-right: 1.5rem;
+  font-family: $text-font;
+}
+
+.navbar__items {
+  color: $secondary-clr;
+  text-decoration: none;
+  padding: 0.5rem;
+}
